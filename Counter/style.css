@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container, .counters, .counter-buttons, .logo-text{
+    display: flex;
+}
+
+.logo-text{
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #264653, #2a9d8f);
+}
+
+.logo-text h1{
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 50vw;
+    height: 45vh;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(120deg, #264653, #2a9d8f);
+    border-radius: 50px;
+}
+
+.counters{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 25px 0;
+}
+
+.counters h2{
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.counters .num{
+    font-size: 4.5rem;
+    font-weight: 100;
+}
+
+.counter-buttons{
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.counter-button{
+    padding: 15px;
+    margin: 0 1.3em;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: none;
+    text-transform: uppercase;
+    border: 1px solid black;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.counter-button:hover{
+    background: black;
+    color: white;
+}
